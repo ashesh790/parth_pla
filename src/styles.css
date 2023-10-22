@@ -22062,3 +22062,15 @@ fieldset:disabled .btn {
         display: none !important;
     }
 }
+
+.display-3 {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 800;
+    line-height: 1.2
+}
+
+@media (min-width: 1200px) {
+    .display-3 {
+        font-size: 4rem
+    }
+}
