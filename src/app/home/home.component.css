@@ -1,0 +1,13 @@
+.product_range:hover {
+    background-color: rgb(243, 240, 236) !important;
+    color: black !important;
+
+}
+
+.text_link {
+    color: black !important;
+}
+
+.product_range {
+    text-align: center;
+}
