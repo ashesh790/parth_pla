@@ -1,10 +1,11 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #FFFFFF !important;">
     <div class="container">
-        <a class="navbar-brand" routerLink="/home" routerLinkActive="active"><img src="assets/test/parth_plastomech.jpeg" class="logo"></a>
+        <a class="navbar-brand" routerLink="/home" routerLinkActive="active"><img
+                src="assets/test/parth_plastomech.jpeg" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> 
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -25,12 +26,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/contact" routerLinkActive="active"><button
-                            mat-button>Contact</button></a>
+                            mat-button>Services</button></a>
                 </li>
             </ul>
         </div>
     </div>
-</nav> 
+</nav>
 <mat-menu #about="matMenu">
     <button mat-menu-item [matMenuTriggerFor]="plastic_extrusion_plants">
         <div class="v-align-center"><span>Plastic Extrusion Plants</span>
@@ -44,30 +45,37 @@
         <div class="v-align-center"><span>Winder Machine For Plastic Extrusion Plant</span>
         </div>
     </button>
-    
-        <a routerLink="app-ply-yarn-twister">
-            <button mat-menu-item (click)="getValue('ply_yarn_twister')">Ply Yarn Twister</button></a> 
-        <!-- <a routerLink="app-inflow-twister"><button mat-menu-item (click)="getValue('inflow_twister')">Inflow Twister</button></a> -->
-    
-        <a routerLink="app-rope-coiling-machine"><button mat-menu-item (click)="getValue('rope_coiling_machine')">Rope coiling Machine</button></a>
+
+    <a routerLink="app-ply-yarn-twister">
+        <button mat-menu-item (click)="getValue('ply_yarn_twister')">Ply Yarn Twister</button></a>
+    <!-- <a routerLink="app-inflow-twister"><button mat-menu-item (click)="getValue('inflow_twister')">Inflow Twister</button></a> -->
+
+    <a routerLink="app-rope-coiling-machine"><button mat-menu-item (click)="getValue('rope_coiling_machine')">Rope
+            coiling Machine</button></a>
 </mat-menu>
 <mat-menu #plastic_extrusion_plants="matMenu">
-    
-        <a routerLink="app-pp-tape-fibrillated-extrusion-plant"><button mat-menu-item (click)="getValue('pp_tape_fibrillated_extrusion_plant')"> Tape Fibrillated Extrusion Plant</button></a> 
 
-    
-        <a routerLink="app-mono-danline-extrusion-plant"><button mat-menu-item (click)="getValue('mono_danline_extrusion_plant')">Mono Danline Extrusion Plant</button></a> 
+    <a routerLink="app-pp-tape-fibrillated-extrusion-plant"><button mat-menu-item
+            (click)="getValue('pp_tape_fibrillated_extrusion_plant')"> Tape Fibrillated Extrusion Plant</button></a>
 
-    
-        <a routerLink="app-pp-hdpe-monofilament-extrusion-yarn-plant"><button mat-menu-item (click)="getValue('pp_hdpe_monofilament_extrusion_yarn_plant')">PP / HDPE Monofilament Extrusion Yarn Plant</button></a> 
 
-    
-        <a routerLink="app-danline-extrusion-plant"><button mat-menu-item (click)="getValue('danline_extrusion_plant')">Danline Extrusion Plant</button></a> 
+    <a routerLink="app-mono-danline-extrusion-plant"><button mat-menu-item
+            (click)="getValue('mono_danline_extrusion_plant')">Mono Danline Extrusion Plant</button></a>
 
-    
-        <a routerLink="app-baler-twine-extrusion-plant"><button mat-menu-item (click)="getValue('baler_twine_extrusion_plant')">Baler Twine Extrusion Plant</button></a> 
+
+    <a routerLink="app-pp-hdpe-monofilament-extrusion-yarn-plant"><button mat-menu-item
+            (click)="getValue('pp_hdpe_monofilament_extrusion_yarn_plant')">PP / HDPE Monofilament Extrusion Yarn
+            Plant</button></a>
+
+
+    <a routerLink="app-danline-extrusion-plant"><button mat-menu-item
+            (click)="getValue('danline_extrusion_plant')">Danline Extrusion Plant</button></a>
+
+
+    <a routerLink="app-baler-twine-extrusion-plant"><button mat-menu-item
+            (click)="getValue('baler_twine_extrusion_plant')">Baler Twine Extrusion Plant</button></a>
     <button mat-menu-item (click)="getValue('sutil_extrusion_plant')">
-        <a routerLink="app-sutil-extrusion-plant">Sutil Extrusion Plant</a></button> 
+        <a routerLink="app-sutil-extrusion-plant">Sutil Extrusion Plant</a></button>
 </mat-menu>
 <mat-menu #rope_making_machine="matMenu">
     <button mat-menu-item (click)="getValue('rope_making_machine_two_six_mm')">
@@ -75,13 +83,13 @@
     <button mat-menu-item (click)="getValue('rope_making_machine_4_8mm')">
         <a routerLink="app-rope-making-machine-four-eight-mm">Rope Making Machine 4-8mm</a></button>
     <button mat-menu-item (click)="getValue('rope_making_machine_6_12mm')">
-        <a routerLink="app-rope-making-machine-six-twelve-mm">Rope Making Machine 6-12mm</a></button> 
+        <a routerLink="app-rope-making-machine-six-twelve-mm">Rope Making Machine 6-12mm</a></button>
     <button mat-menu-item (click)="getValue('rope_making_machine_8_16mm')">
-        <a routerLink="app-rope-making-machine-eight-sixteen-mm">Rope Making Machine 8-16mm</a></button> 
+        <a routerLink="app-rope-making-machine-eight-sixteen-mm">Rope Making Machine 8-16mm</a></button>
     <button mat-menu-item (click)="getValue('rope_making_machine_12_24mm')">
         <a routerLink="app-rope-making-machine-twelve-twenty-four-mm">Rope Making Machine 12-24mm</a></button>
     <button mat-menu-item (click)="getValue('rope_making_machine_18_40mm')">
-        <a routerLink="app-rope-making-machine-eighteen-fouryt-mm">Rope Making Machine 20-40mm</a></button> 
+        <a routerLink="app-rope-making-machine-eighteen-fouryt-mm">Rope Making Machine 20-40mm</a></button>
 </mat-menu>
 
 <mat-menu #winder="matMenu">
@@ -91,4 +99,4 @@
         <a routerLink="app-cheeze-winder">Cheese Winder</a></button>
     <!-- <button mat-menu-item (click)="getValue('roll_winder')">
         <a routerLink="app-roll-winder">Roll Winder</a></button> -->
-</mat-menu> 
+</mat-menu>
